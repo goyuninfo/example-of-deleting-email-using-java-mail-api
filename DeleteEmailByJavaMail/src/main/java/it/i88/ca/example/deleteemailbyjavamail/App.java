@@ -18,7 +18,8 @@ import javax.mail.Store;
  * Example of deleting email using JavaMail API. It is not following the best
  * practice. It is just for example of some of the API functions. In practice
  * you should use command of IMAPProtocol instead.
- *
+ * @see <a
+ * href="http://it.i88.ca/2013/10/example-of-deleting-email-using.html">it.i88.ca</a>
  */
 public class App {
 
