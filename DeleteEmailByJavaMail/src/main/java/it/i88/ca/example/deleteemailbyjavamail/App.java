@@ -1,7 +1,6 @@
 package it.i88.ca.example.deleteemailbyjavamail;
 
 import com.sun.mail.imap.IMAPFolder;
-import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
 import java.util.logging.Level;
@@ -26,8 +25,8 @@ public class App {
     public static void main(String[] args) throws NoSuchProviderException, MessagingException {
         Properties prop = new Properties();
         try {
-            //load a properties file from class path, inside static method
-            prop.load(new FileInputStream("newproperties.properties"));
+            //load a properties file 
+            prop.load(App.class.getClassLoader().getResourceAsStream("newproperties.properties"));
         } catch (IOException ex) {
             Logger.getLogger(App.class.getName()).log(Level.SEVERE, null, ex);
         }
